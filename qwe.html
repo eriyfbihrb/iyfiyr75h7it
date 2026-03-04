@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>الان رمضان طهر.. كن صادقًا</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial;
+    background-color:#0B1C2D;
+    color:white;
+    text-align:center;
+}
+
+/* الهيدر مع الصورة الجديدة */
+header {
+    padding: 150px 20px;
+    text-align: center;
+    color: white;
+    background-image: url('https://tse1.mm.bing.net/th/id/OIP.lVNV_EQ9EzxYBnRHADc3ugHaGw?rs=1&pid=ImgDetMain&o=7&rm=3');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 3px solid #D4AF37;
+}
+
+h1{
+    color:#D4AF37;
+}
+
+.section{
+    padding:40px;
+}
+
+.story{
+    background-color:#1c2f45;
+    margin:20px;
+    padding:30px;
+    border-radius:10px;
+    text-align:right;
+    max-height: none; /* الصندوق يتسع لكل النص */
+    overflow: visible;
+}
+
+button{
+    background-color:#D4AF37;
+    border:none;
+    padding:10px 20px;
+    margin:10px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+textarea{
+    width:70%;
+    height:100px;
+    border-radius:10px;
+    padding:10px;
+}
+
+.footer{
+    background-color:#111;
+    padding:20px;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🌙 الان رمضان طُهر.. كن صادقًا</h1>
+<p>رمضان فرصة لتطهير القلوب قبل الأجساد</p>
+</header>
+
+<div class="section">
+<h2>📖 القصة القصيرة</h2>
+<div class="story">
+<p>
+في أحد أيام رمضان، كان أحمد صائمًا ويعمل في متجر صغير. دخل رجل مسنّ واشترى بعض الحاجيات، وأخطأ أحمد في الحساب وأخذ مبلغًا أكبر دون أن ينتبه الرجل.<br><br>
+بعد دقائق، شعر أحمد بوخزٍ في قلبه… تذكّر أنه صائم، وأن رمضان ليس امتناعًا عن الطعام فقط، بل امتناع عن الظلم أيضًا.<br><br>
+أغلق المتجر قليلًا، وركض خلف الرجل في الشارع حتى وجده، وأعاد له المبلغ معتذرًا.<br><br>
+ابتسم الرجل وقال: "يا بني، صدقك هذا أثمن من المال."<br><br>
+عاد أحمد إلى متجره وقلبه أخف… وكأنه صام بصدق لأول مرة.
+</p>
+</div>
+</div>
+
+<div class="section">
+<h2>🗳️ استطلاع الرأي</h2>
+<p>1️⃣ ما رأيك بتصرف أحمد؟</p>
+<input type="radio" name="q1"> تصرف صحيح جدًا <br>
+<input type="radio" name="q1"> كان يمكن تجاهله <br>
+<input type="radio" name="q1"> عادي <br>
+
+<p>2️⃣ هل شعرت أن القصة مؤثرة؟</p>
+<input type="radio" name="q2"> نعم جدًا <br>
+<input type="radio" name="q2"> بعض الشيء <br>
+<input type="radio" name="q2"> لا <br>
+
+<p>3️⃣ هل تشجع الصدق في حياتك اليومية؟</p>
+<input type="radio" name="q3"> نعم دائمًا <br>
+<input type="radio" name="q3"> أحيانًا <br>
+<input type="radio" name="q3"> لا <br>
+
+<p>4️⃣ هل ستطبق الصدق أكثر بعد قراءة القصة؟</p>
+<input type="radio" name="q4"> نعم <br>
+<input type="radio" name="q4"> ربما <br>
+<input type="radio" name="q4"> لا <br>
+
+<p>5️⃣ هل تعتقد أن رمضان فرصة لتحسين الأخلاق؟</p>
+<input type="radio" name="q5"> نعم جدًا <br>
+<input type="radio" name="q5"> أحيانًا <br>
+<input type="radio" name="q5"> لا <br>
+
+<p>6️⃣ هل تحب مشاركة القصة مع أصدقائك أو عائلتك؟</p>
+<input type="radio" name="q6"> نعم <br>
+<input type="radio" name="q6"> ربما <br>
+<input type="radio" name="q6"> لا <br>
+</div>
+
+<div class="section">
+<h2>💬 عبّر عن رأيك</h2>
+<textarea id="userMessage" placeholder="اكتب رأيك هنا..."></textarea>
+<br>
+<button onclick="sendMessage()">إرسال</button>
+
+<script>
+function sendMessage(){
+    let msg = document.getElementById('userMessage').value;
+    if(msg.trim() === "") {
+        alert("اكتب شيئًا أولاً!");
+    } else {
+        alert("تم الإرسال! 🌙");
+        document.getElementById('userMessage').value = ""; // يمسح النص بعد الإرسال
+    }
+}
+</script>
+</div>
+
+<div class="section">
+<h2> العبرة</h2>
+<p>الصدق قرار يتجدد كل يوم، ورمضان أفضل بداية.</p>
+</div>
+
+<div class="footer">
+<p>هاكثون رمضان</p>
+<p>ثانوية خيرية الأمير سلطان</p>
+<p>تحت اشراف المعلمات: ✨عهود حمدي ✨حظيه اليحياوي ✨سها عقيلي ✨عيشة عيسى</p>
+<p>اعداد الطلاب: عائشة عسيري - سمر المنجحي - حالية علي - فاطمة يحيى - فاطمه حسن - ناله قطران - ايمان علي - حنان ابراهيم - ريهام علي- نجد عبدالرحمن</p>
+</div>
+
+</body>
+</html>
